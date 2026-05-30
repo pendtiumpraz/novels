@@ -130,6 +130,26 @@ Setiap bab harus punya minimal 1 dari ini:
 
 ---
 
+## Aturan Penting Game
+
+### 1. Starter Equipment
+- Pemain baru dapat equipment standar (polos, jelek)
+- Semakin tinggi Fame/level, semakin bagus tampilan equipment
+- Costume keren = reward progres, bukan starter pack
+
+### 2. AFK = Risiko Mati
+- Gak bisa logout, tapi bisa AFK
+- Karakter AFK bisa diserang monster
+- Mati saat AFK = jadi NPC sementara
+- Satu-satunya cara aman AFK: Fame tinggi (bisa sewa bodyguard) atau di area aman
+
+### 3. Tidak Ada Second Chance
+- Gak ada respawn instan
+- Mati = kehilangan progress, skill, item
+- True Death = karakter ilang permanen (jarang, tapi bisa)
+
+---
+
 ## 9 Major Chapter — Sinopsis Pendek
 
 ### Chapter 1: SENAPATI — Pemimpin Terlahir

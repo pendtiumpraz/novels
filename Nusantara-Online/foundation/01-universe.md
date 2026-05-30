@@ -17,6 +17,17 @@ Game VRMMORPG generasi terbaru yang menggabungkan SEMUA genre game dalam satu du
 
 Setiap pemain memulai dari kamar pribadi dan bisa menjelajah ke universe lain melalui portal.
 
+### Aturan No Logout
+Game ini TIDAK memiliki tombol logout. Setelah masuk, pemain terjebak di Nusantara Online sampai mencapai kondisi tertentu (Fame SSS atau Admin Access).
+
+### AFK System
+Meski tidak bisa logout, pemain bisa AFK (Away From Keyboard):
+- Karakter tetap berada di game
+- Karakter bisa duduk, tidur, atau jalan otomatis di area aman
+- Karakter bisa diserang monster saat AFK di area berbahaya
+- Jika HP habis saat AFK → karakter bisa diperbudak jadi NPC sementara
+- Semakin tinggi Fame, semakin aman AFK (bisa sewa bodyguard)
+
 ---
 
 ## Sistem Fame — Tujuan Utama Game

@@ -74,6 +74,24 @@ Dan suara.
 
 Bima teriak duluan. Dan Arya gak bisa salahin dia.
 
+— Tapi sebelum mereka sempat lihat pemandangan, suara sistem terdengar lagi.
+
+**"STATUS: Starter Equipment Distributed."**
+
+Tiba-tiba, cahaya menyelimuti tubuh mereka. Arya ngerasa ada yang berubah di badannya. Pas diliat... jubah biru tua sederhana, polos tanpa motif. Di pinggang, sebuah keris kecil — gagang kayu, sarung polos. Standar.
+
+Bima nengok badannya. "Ah, dapet baju baru. Tapi jelek." Kaos oblongnya berganti rompi kulit coklat dan celana kain gelap. Di tangannya, sebuah kipas kayu biasa — yang dulu di kamar starter.
+
+Chandra cuma nerima jubah hitam polos tanpa corak rumus. "Starter equipment. Semakin tinggi Fame, semakin bagus penampilan kita."
+
+"Berarti kalo Fame gue tinggi, gue bisa dapet baju keren?" tanya Bima.
+
+"Tepat."
+
+"OK, gue main."
+
+Mereka bertiga akhirnya melangkah keluar dari area portal.
+
 Hening Forest.
 
 Mereka berdiri di tepi hutan terbesar yang pernah mereka lihat. Pohon-pohonnya... gila. Tingginya kayak gedung 20 lantai. Dahan-dahannya selebar jalan tol. Daun-daunnya bukan hijau biasa — ada yang biru neon, ada yang ungu, ada yang emas. Di sela-sela dahan, titik-titik cahaya beterbangan kayak kunang-kunang versi dewa.
@@ -114,7 +132,7 @@ Monster pertama: **Kelelawar Kayu** — level 1.
 
 Besar, seukuran kucing. Matanya merah. Sayapnya dari kayu — beneran kayu.
 
-Bima nayang duluan. Kipasnya — ternyata bukan kipas biasa — berubah jadi tombak emas pas dia ayunin.
+Bima nayang duluan. Kipas kayunya — pas diayunin — berubah jadi tombak kayu sederhana. Bukan emas. Bukan keren. Tapi cukup buat tusuk.
 
 Tusukan. Kelelawar menghindar. Terbang ke atas. Bima kaget.
 

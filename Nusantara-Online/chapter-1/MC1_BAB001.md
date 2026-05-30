@@ -151,11 +151,27 @@ Arya menatap kedua teman barunya.
 
 "...kita temukan semua rahasia game ini. Termasuk yang namanya Secret Skill."
 
+"Oh iya." Bima nyengir. "Lo berdua tau kan kalo game ini gak ada logout button?"
+
+Arya dan Chandra saling pandang.
+
+"Rumor itu bener," kata Chandra pelan. "Tapi kita tetap bisa AFK. Karakter kita bakal stay di game, duduk, tiduran, atau jalan otomatis."
+
+"Dan?" desak Arya.
+
+"Dan kalo kita kelamaan offline..." Bima nyambung, senyumnya ilang. "Karakter kita bisa diterkam monster. Atau lebih parah — diperbudak jadi NPC."
+
+Hening.
+
+Arya menghela napas panjang. "Jadi intinya: kita gabisa logout, dan kalo ditinggal, karakter kita mati."
+
+"Simple!" Bima tepuk tangan. "Tinggal jangan mati."
+
 Chandra tersenyum tipis. Pertama kalinya dia menunjukkan ekspresi.
 
-"Probabilitas kita berhasil: 0.04%."
+"Probabilitas kita bertahan hidup di minggu pertama: 34.7%."
 
-Bima ketawa keras. "Wah, gede amat."
+Bima ketawa keras. "Wah, optimis amat."
 
 "0.04% dari pemain yang gagal," Chandra melanjutkan.
 
