@@ -3,7 +3,8 @@
 ---
 
 ## BOSS 1: PRABU GUNTUR — Penjaga Gerbang Timur
-**Universe:** Suralaya (Awan)
+**Universe:** Suralaya — JAWA
+**Pulau:** Jawa
 **Secret Skill:** #1 — SENAPATI
 
 **Penampilan:** Prajurit raksasa baju besi emas-hitam, memegang pedang petir raksasa, mahkota di kepala, mata menyala biru.
@@ -20,7 +21,8 @@
 ---
 
 ## BOSS 2: NYI RORO KIDUL — Ratu Ombak Selatan
-**Universe:** Laut Selatan
+**Universe:** Laut Selatan — BALI & NUSA TENGGARA
+**Pulau:** Bali
 **Secret Skill:** #2 — SAMUDRA
 
 **Penampilan:** Wanita cantik berpakaian hijau laut, mahkota karang, kulit kebiru-biruan, mata seperti pusaran air, rambut panjang hijau gelap.
@@ -37,7 +39,8 @@
 ---
 
 ## BOSS 3: BARONG — Raja Hutan Abadi
-**Universe:** Hening Forest
+**Universe:** Hening Forest — SUMATERA
+**Pulau:** Sumatra
 **Secret Skill:** #3 — ALAM
 
 **Penampilan:** Barong raksasa (singa mitologis Bali) dengan bulu emas dan putih, mata merah, aura hutan menyala.
@@ -54,7 +57,8 @@
 ---
 
 ## BOSS 4: RANGDA — Ibu Kegelapan
-**Universe:** Amarta Hollow
+**Universe:** Amarta Hollow — PAPUA
+**Pulau:** Papua
 **Secret Skill:** #4 — GELAP
 
 **Penampilan:** Rangda (Ratu Leyak Bali), rambut panjang putih kusut, kuku panjang, mata putih tanpa pupil, lidah menjulur, pakaian putih kotor, dikelilingi api hijau.
@@ -71,7 +75,8 @@
 ---
 
 ## BOSS 5: AJAR WESI — Pandai Besi Legenda
-**Universe:** Gupala Forge
+**Universe:** Gupala Forge — SULAWESI
+**Pulau:** Sulawesi
 **Secret Skill:** #5 — TEMPA
 
 **Penampilan:** Pria tua berotot dengan otot baja, kulit legam, janggut putih, palu raksasa di tangan, api mengelilingi, badan penuh tattoo rune.
@@ -88,7 +93,8 @@
 ---
 
 ## BOSS 6: DEWI NAWANG — Nawang Wulan
-**Universe:** Kahyangan
+**Universe:** Kahyangan — MALUKU
+**Pulau:** Maluku
 **Secret Skill:** #6 — LANGIT
 
 **Penampilan:** Bidadari dengan 7 sayap, jubah dari awan, mahkota bintang, cahaya lembut dari tubuhnya, rambut panjang berkilau.
@@ -105,7 +111,8 @@
 ---
 
 ## BOSS 7: JOKO TARUB — Penjaga Waktu
-**Universe:** Prisma Waktu
+**Universe:** Prisma Waktu — NTT
+**Pulau:** Nusa Tenggara Timur
 **Secret Skill:** #7 — WAKTU
 
 **Penampilan:** Pria paruh baya dengan jubah penuh jam pasir, rambut putih setengah, mata satu normal satu jam, tongkat dengan roda waktu.
@@ -123,7 +130,8 @@ Prediction: Hampir mustahil karena dia sudah tahu gerakan pemain.
 ---
 
 ## BOSS 8: BETHARA KALA — Dewa Kehancuran
-**Universe:** Kala Void
+**Universe:** Kala Void — SAMUDRA TERLUAR
+**Wilayah:** Samudra Indonesia
 **Secret Skill:** #8 — NIRWANA
 
 **Penampilan:** Raksasa gelap dengan 4 lengan, kepala seperti raksasa wayang, mata merah api, tubuh dari kegelapan pekat dengan bintang-bintang mati di dalamnya, suara menggema.
@@ -140,7 +148,8 @@ Prediction: Hampir mustahil karena dia sudah tahu gerakan pemain.
 ---
 
 ## BOSS 9: SEMAR — Bijak Bestari
-**Universe:** Jiwa Nusantara
+**Universe:** Jiwa Nusantara — Spiritual NUSANTARA
+**Wilayah:** Seluruh Indonesia (Spiritual)
 **Secret Skill:** #9 — AKAL
 
 **Penampilan:** Semar (tokoh wayang) versi dewa — tubuh bulat, lebar, tersenyum, pakaian tradisional, duduk santai di awan, tapi matanya tajam — seperti tahu segalanya.
@@ -157,7 +166,8 @@ Prediction: Hampir mustahil karena dia sudah tahu gerakan pemain.
 ---
 
 ## BOSS 10: SANG HYANG TUNGGAL — Sang Pencipta Game
-**Universe:** Inti Nusantara
+**Universe:** Inti Nusantara — COSMIC CORE
+**Wilayah:** Pusat Game — Seluruh Nusantara
 **Secret Skill:** — (None — Secret Scenario Reward: Admin Access)
 
 **Penampilan:** Wujud cahaya putih berbentuk manusia tanpa wajah. Suara dari segala arah. Di sekelilingnya: kode sumber game yang mengalir.
