@@ -4,7 +4,7 @@
 
 | Major Chapter | Secret Skill | Boss | Progress | Bab selesai |
 |:---:|:---:|:---:|:---:|:---:|
-| 1 | SENAPATI | Prabu Guntur | WRITING | 2/50 |
+| 1 | SENAPATI | Prabu Guntur | WRITING | 3/50 |
 | 2 | SAMUDRA | Nyi Roro Kidul | PENDING | 0/50 |
 | 3 | ALAM | Barong | PENDING | 0/50 |
 | 4 | GELAP | Rangda | PENDING | 0/50 |
@@ -14,11 +14,11 @@
 | 8 | NIRWANA | Bethara Kala | PENDING | 0/50 |
 | 9 | AKAL | Semar + Sang Hyang | PENDING | 0/50 |
 
-**Total bab:** 2 / 450
-**Total kata:** ~2.238
+**Total bab:** 3 / 450
+**Total kata:** ~4.585
 
 ---
 
 ## Writing Queue
 
-Next: MC1_BAB003 — Lanjut eksplorasi Hening Forest
+Next: MC1_BAB004 — Melawan Naga Pralaya dan masuk Suralaya
