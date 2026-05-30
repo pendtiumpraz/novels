@@ -29,7 +29,7 @@ if (headerMatch) title = headerMatch[1];
 
 // Check for cover image
 const coverImagePath = path.join(path.dirname(path.dirname(inputFile)), 'images', 'covers', `${filename}-cover.jpg`);
-const trikaraCoverPath = path.join(path.dirname(path.dirname(inputFile)), 'images', 'trikara-cover.jpg');
+const trikaraCoverPath = path.join(path.dirname(path.dirname(inputFile)), 'images', 'trikara-cover-v2.jpg');
 const hasCoverImage = fs.existsSync(coverImagePath);
 
 const doc = new PDFDocument({
