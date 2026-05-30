@@ -24,9 +24,13 @@ const filename = path.parse(inputFile).name;
 
 // Extract info
 let title = 'NUSANTARA ONLINE';
-let babNum = filename.replace(/^BAB/, '').replace(/^MC\d_BAB(\d+)/, '$1');
 const headerMatch = content.match(/^# (.+)/m);
 if (headerMatch) title = headerMatch[1];
+
+// Check for cover image
+const coverImagePath = path.join(path.dirname(path.dirname(inputFile)), 'images', 'covers', `${filename}-cover.jpg`);
+const trikaraCoverPath = path.join(path.dirname(path.dirname(inputFile)), 'images', 'trikara-cover.jpg');
+const hasCoverImage = fs.existsSync(coverImagePath);
 
 const doc = new PDFDocument({
   size: 'A4',
@@ -46,54 +50,63 @@ doc.pipe(stream);
 let y = MARGIN_TOP;
 
 // ============ COVER PAGE ============
-y = PAGE_HEIGHT * 0.15;
-doc.font(FONT_BOLD).fontSize(36).fillColor('#1a1a1a');
-doc.text('NUSANTARA ONLINE', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
 
-y += 50;
-doc.font(FONT_REGULAR).fontSize(18).fillColor('#555');
-doc.text(title, MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+// Try to embed actual cover image first
+let coverUsed = false;
+if (hasCoverImage) {
+  try {
+    // Add cover image filling most of the page
+    const imgHeight = PAGE_HEIGHT - 160;
+    const imgWidth = imgHeight * (768/1024);
+    const imgX = MARGIN_LEFT + (CONTENT_WIDTH - imgWidth) / 2;
+    doc.image(coverImagePath, imgX, 20, { width: imgWidth, height: imgHeight });
+    coverUsed = true;
+  } catch(e) {}
+}
 
-y += 35;
-doc.font(FONT_ITALIC).fontSize(12).fillColor('#888');
-const babDisplay = filename.replace(/-/g, ' ').replace(/_/g, ' ');
-doc.text(babDisplay, MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+// If no cover image, use Trikara group as fallback
+if (!coverUsed && fs.existsSync(trikaraCoverPath)) {
+  try {
+    const imgHeight = PAGE_HEIGHT - 200;
+    const imgWidth = imgHeight;
+    const imgX = MARGIN_LEFT + (CONTENT_WIDTH - imgWidth) / 2;
+    doc.image(trikaraCoverPath, imgX, 30, { width: imgWidth, height: imgHeight });
+    coverUsed = true;
+  } catch(e) {}
+}
 
-y += 80;
-doc.font(FONT_REGULAR).fontSize(11).fillColor('#999');
-doc.text('Penulis: Galih Prasetyo', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
-y += 20;
-doc.text('Genre: LitRPG / Isekai / Anime Fantasy', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
-y += 20;
-const dateStr = new Date().toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
-doc.text(`Tanggal: ${dateStr}`, MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
-
-// Cover art prompt section
-y += 80;
-doc.font(FONT_ITALIC).fontSize(9).fillColor('#aaa');
-doc.text('— Cover GPT Image 2 Prompt —', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
-y += 20;
-
-// Generate cover prompt based on content
-let mainChar = 'TRIKARA (Arya, Bima, Chandra)';
-let sceneHint = 'gerbang Nusantara Online';
-if (content.toLowerCase().includes('arya') && !content.toLowerCase().includes('bima') && !content.toLowerCase().includes('chandra')) mainChar = 'ARYA — jubah biru, kacamata, keris petir';
-else if (content.toLowerCase().includes('bima') && !content.toLowerCase().includes('arya') && !content.toLowerCase().includes('chandra')) mainChar = 'BIMA — putih emas, kipas, senyum';
-else if (content.toLowerCase().includes('chandra') && !content.toLowerCase().includes('arya') && !content.toLowerCase().includes('bima')) mainChar = 'CHANDRA — hitam abu, busur, rumus';
-
-if (content.toLowerCase().includes('hutan') || content.toLowerCase().includes('forest')) sceneHint = 'Hening Forest — Sumatra, pohon raksasa bercahaya';
-else if (content.toLowerCase().includes('kamar')) sceneHint = 'Kamar Pribadi — base camp awal';
-else if (content.toLowerCase().includes('laut') || content.toLowerCase().includes('ombak')) sceneHint = 'Laut Selatan — Bali, ombak raksasa';
-else if (content.toLowerCase().includes('kota') || content.toLowerCase().includes('pasar') || content.toLowerCase().includes('market')) sceneHint = 'Kota Nusantara — Kalimantan, pasar terapung';
-else if (content.toLowerCase().includes('boss') || content.toLowerCase().includes('guntur') || content.toLowerCase().includes('prabu')) sceneHint = 'Suralaya — Candi Borobudur terbang, boss fight';
-
-const coverPrompt = `${mainChar}, ${sceneHint}, anime character art, consistent character design, cinematic lighting, epic pose, Nusantara Online game world background, high detail, vibrant colors, A4 book cover composition --ar 210:297`;
-
-doc.font(FONT_REGULAR).fontSize(8).fillColor('#bbb');
-// Wrap prompt text
-doc.fontSize(8).text(coverPrompt, MARGIN_LEFT + 20, y, {
-  width: CONTENT_WIDTH - 40, align: 'center', lineGap: 1
-});
+// Title + info overlay on bottom of cover
+if (coverUsed) {
+  y = PAGE_HEIGHT - MARGIN_BOTTOM - 70;
+  // Semi-transparent background for text
+  doc.rect(MARGIN_LEFT, y - 8, CONTENT_WIDTH, 80).fillOpacity(0.7).fill('#fff');
+  doc.fillOpacity(1);
+  doc.font(FONT_BOLD).fontSize(22).fillColor('#1a1a1a');
+  doc.text('NUSANTARA ONLINE', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+  y += 25;
+  doc.font(FONT_REGULAR).fontSize(12).fillColor('#555');
+  doc.text(title, MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+  y += 16;
+  doc.font(FONT_ITALIC).fontSize(10).fillColor('#888');
+  doc.text('Galih Prasetyo', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+} else {
+  // Fallback: text-only cover
+  y = PAGE_HEIGHT * 0.2;
+  doc.font(FONT_BOLD).fontSize(36).fillColor('#1a1a1a');
+  doc.text('NUSANTARA ONLINE', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+  y += 50;
+  doc.font(FONT_REGULAR).fontSize(18).fillColor('#555');
+  doc.text(title, MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+  y += 35;
+  doc.font(FONT_ITALIC).fontSize(12).fillColor('#888');
+  const babDisplay = filename.replace(/-/g, ' ').replace(/_/g, ' ');
+  doc.text(babDisplay, MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+  y += 60;
+  doc.font(FONT_REGULAR).fontSize(11).fillColor('#999');
+  doc.text('Penulis: Galih Prasetyo', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+  y += 20;
+  doc.text('Genre: LitRPG / Isekai / Anime Fantasy', MARGIN_LEFT, y, { width: CONTENT_WIDTH, align: 'center' });
+}
 
 // ============ CONTENT ============
 doc.addPage();
@@ -151,5 +164,5 @@ stream.on('finish', () => {
   console.log(`PDF: ${outputPath}`);
   console.log(`Size: ${(stats.size / 1024).toFixed(1)} KB`);
   console.log(`Pages: ${range.count}`);
-  console.log(`Cover prompt: ${coverPrompt.substring(0, 60)}...`);
+  console.log(`Cover image: ${hasCoverImage ? 'YES' : 'FALLBACK'}`);
 });
