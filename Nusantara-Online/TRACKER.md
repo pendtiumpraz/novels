@@ -15,10 +15,4 @@
 | 9 | AKAL | Semar + Sang Hyang | PENDING | 0/50 |
 
 **Total bab:** 3 / 450
-**Total kata:** ~4.585
-
----
-
-## Writing Queue
-
-Next: MC1_BAB004 — Melawan Naga Pralaya dan masuk Suralaya
+**Total kata:** ~3.750
